@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Result"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/resultOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="300dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="EP Data"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Grinding machine"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/grindingNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:text="0.92"
+                        android:hint="Nn" />
+
+                    <EditText
+                        android:id="@+id/grindingCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/grindingUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/grindingNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="4"/>
+
+                    <EditText
+                        android:id="@+id/grindingPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="20"/>
+
+                    <EditText
+                        android:id="@+id/grindingKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.15"/>
+
+                    <EditText
+                        android:id="@+id/grindingTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1.33"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Drilled machine"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/drilledNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/drilledCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/drilledUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/drilledNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="2"/>
+
+                    <EditText
+                        android:id="@+id/drilledPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="14"/>
+
+                    <EditText
+                        android:id="@+id/drilledKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.12"/>
+
+                    <EditText
+                        android:id="@+id/drilledTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Jointing machine"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/jointingNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/jointingCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/jointingUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/jointingNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="4"/>
+
+                    <EditText
+                        android:id="@+id/jointingPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="42"/>
+
+                    <EditText
+                        android:id="@+id/jointingKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.15"/>
+
+                    <EditText
+                        android:id="@+id/jointingTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1.33"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Circular saw"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/circularSawNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/circularSawCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/circularSawUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/circularSawNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="1"/>
+
+                    <EditText
+                        android:id="@+id/circularSawPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="36"/>
+
+                    <EditText
+                        android:id="@+id/circularSawKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.3"/>
+
+                    <EditText
+                        android:id="@+id/circularSawTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1.52"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Press"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/pressNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/pressCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/pressUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/pressNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="1"/>
+
+                    <EditText
+                        android:id="@+id/pressPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="20"/>
+
+                    <EditText
+                        android:id="@+id/pressKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.5"/>
+
+                    <EditText
+                        android:id="@+id/pressTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="0.75"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Polishing machine"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/polishingNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/polishingCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/polishingUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/polishingNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="1"/>
+
+                    <EditText
+                        android:id="@+id/polishingPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="40"/>
+
+                    <EditText
+                        android:id="@+id/polishingKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.2"/>
+
+                    <EditText
+                        android:id="@+id/polishingTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Shaper"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/shaperNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/shaperCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/shaperUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/shaperNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="2"/>
+
+                    <EditText
+                        android:id="@+id/shaperPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="32"/>
+
+                    <EditText
+                        android:id="@+id/shaperKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.2"/>
+
+                    <EditText
+                        android:id="@+id/shaperTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Fan"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/fanNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/fanCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/fanUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/fanNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="1"/>
+
+                    <EditText
+                        android:id="@+id/fanPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="20"/>
+
+                    <EditText
+                        android:id="@+id/fanKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.65"/>
+
+                    <EditText
+                        android:id="@+id/fanTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="0.75"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Welding transformer"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/weldingTransformerNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="2"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerPnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="100"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.2"/>
+
+                    <EditText
+                        android:id="@+id/weldingTransformerTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="3"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Dryer wardrobe"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeNnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Nn"
+                        android:text="0.92"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeCosInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="cos"
+                        android:text="0.9"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeUnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Un"
+                        android:text="0.38"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeNInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="n"
+                        android:text="2"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobePnInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Pn"
+                        android:text="120"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeKvInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="Kv"
+                        android:text="0.8"/>
+
+                    <EditText
+                        android:id="@+id/dryerWardrobeTgInput"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:hint="tg"
+                        android:text="1.0"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Calculate" />
+
+</LinearLayout>
+
